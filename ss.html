@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Car Rental</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin-left: 2rem;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .section h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cars {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .car-card {
+            background: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .car-card:hover {
+            transform: scale(1.05);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .car-card h4 {
+            margin: 1rem 0;
+        }
+
+        .car-card p {
+            padding: 0 1rem 1rem;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elite Car Rentals</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#fleet">Fleet</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Luxury Cars. Affordable Prices.</h2>
+    </section>
+
+    <section class="section" id="fleet">
+        <h3>Our Fleet</h3>
+        <div class="cars">
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Car 1">
+                <h4>BMW 5 Series</h4>
+                <p>Comfortable, stylish, and perfect for city drives and business trips.</p>
+            </div>
+            <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Car 2">
+                <h4>Audi A6</h4>
+                <p>Experience German engineering and modern luxury on every journey.</p>
+            </div>
+            <div class="car-card">
+                <img src="https://stock.adobe.com/in/images/black-luxury-sports-car-3d-illustration/1084938089" alt="Car 3">
+                <h4>Mercedes E-Class</h4>
+                <p>Elegant design and powerful performance for any occasion.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <h3>Why Choose Us?</h3>
+        <p>Elite Car Rentals offers top-quality cars at the most affordable prices. All cars are sanitized, well-maintained, and ready to drive. Enjoy a premium experience, 24/7 support, and simple booking.</p>
+    </section>
+
+    <section class="section" id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@elitecarrentals.com | Phone: +91-9876543210</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Elite Car Rentals. All rights reserved.
+    </footer>
+</body>
+</html>
